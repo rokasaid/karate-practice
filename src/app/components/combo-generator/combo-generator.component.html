@@ -1,0 +1,34 @@
+<div class="d-flex f-di-col ju-c-c ro-g-32px">
+  <div
+    class="d-flex f-di-col co-g-32px ju-c-c">
+
+    <div class="d-flex al-i-c co-g-32px f-di-col ju-c-c wi-100">
+      <div class="d-flex">
+        <input type="checkbox" id="includeLowerKyu" [(ngModel)]="includeLowerKyu">
+        <label for="includeLowerKyu">Include lower kyu</label>
+      </div>
+      <div class="d-flex">
+        <select #numOfAttacks id="numOfAttacks" (change)='onAttackNumberChange(numOfAttacks.value)'>
+          <option *ngFor="let attackNum of [1,2,3]" [value]="attackNum">{{ attackNum }}</option>
+        </select>
+        <label for="numOfAttacks">Number of attacks</label>
+      </div>
+    </div>
+
+    <div class="d-flex co-g-32px ju-c-c ma-t-16px">
+      <select #selectedKyu (change)='onKyuChange(selectedKyu.value)'>
+        <option *ngFor="let kyu of kyus" [value]="kyu">{{ kyu }} kyu</option>
+      </select>
+
+      <button
+        class="button"
+        (click)="generateCombo()">
+        Generate combo
+      </button>
+    </div>
+  </div>
+
+  <div class="d-flex ju-c-c z-in-1">
+    <h3 class="fo-f-ca fo-s-48px ma-0 te-a-c">{{ result }}</h3>
+  </div>
+</div>

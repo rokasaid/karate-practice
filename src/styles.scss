@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+label {
+  padding: 10px;
+  text-align: center;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+    width: 64px;
+}
+
+.button:hover {
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.belt-10 {
+  background: linear-gradient(orange, white);
+}
+
+.belt-9 {
+  background: linear-gradient(orange, white);
+}
+
+.stripe.belt-9 {
+  background: #0055d7;
+}
+
+.belt-8 {
+  background: linear-gradient(#0055d7, white);
+}
+
+.stripe.belt-7 {
+  background: #ffe437;
+}
+
+.belt-7 {
+  background: linear-gradient(#0055d7, white);
+}
+
+.stripe {
+  margin-top: 64px;
+  background: black;
+  height: 16px;
+  width: 100%;
+}
+
+.al-i-c {
+    align-items: flex-start;
+}
+
+.bo-r-4px {
+    border-radius: 4px;
+}
+
+.box-s {
+    box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.co-g-32px {
+  column-gap: 32px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.f-di-col {
+  flex-direction: column;
+}
+
+.f-di-row {
+    flex-direction: row;
+}
+
+.fo-f-ca {
+    font-family: 'Calligraffitti', cursive;
+}
+
+.fo-s-48px {
+    font-size: 48px;
+}
+
+.he-f-c {
+    height: fit-content;
+}
+
+.he-80vh {
+  height: 80vh;
+}
+
+.he-100vh {
+    height: 100vh;
+}
+
+.he-100 {
+  height: 100%;
+}
+
+.ju-c-c {
+    justify-content: center;
+}
+
+.ju-c-sb {
+  justify-content: space-between;
+}
+
+.li-b-n {
+    line-break: normal;
+}
+
+.le-0 {
+    left: 0;
+}
+
+.ma-0 {
+    margin: 0;
+}
+
+.ma-t-16px {
+    margin-top: 16px;
+}
+
+.ma-t-32px {
+    margin-top: 32px;
+}
+
+.ma-r-16px {
+    margin-right: 16px;
+}
+
+.ma-r-l-20 {
+    margin: 0 20%;
+}
+
+.ma-l-16px {
+    margin-left: 16px;
+}
+
+.pa-t-16px {
+    padding-top: 16px;
+}
+
+.pa-l-r-16px {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.ro-g-32px {
+  row-gap: 32px;
+}
+
+.te-a-c {
+  text-align: center;
+}
+
+.wi-64px {
+    width: 64px;
+}
+
+.wi-100px {
+    width: 100px;
+}
+
+.wi-80 {
+  width: 80%;
+}
+
+.wi-100 {
+    width: 100%;
+}
+
+.wo-b-b-a {
+    word-break: break-all;
+}
+
+.z-in-1 {
+    z-index: 1 !important;
+}

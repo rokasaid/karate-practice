@@ -1,0 +1,16 @@
+<div class="al-i-c bo-r-4px box-s d-flex f-di-row he-100vh ju-c-sb ma-r-l-20 po-r">
+  <div class="d-flex ma-l-16px pa-t-16px">
+    <img src="assets/logo.png" width="100px">
+  </div>
+
+  <div class="d-flex f-di-col he-f-c ma-0 pa-t-16px pa-l-r-16px ro-g-32px wi-100">
+    <div class="ju-c-c ma-t-16px">
+      <h1 class="ma-0 te-a-c">Karate combo generator for home practice</h1>
+    </div>
+    <app-combo-generator (selectedKyuEvent)="setKyu($event)"></app-combo-generator>
+  </div>
+
+  <div [ngClass]="getCSSClass(kyu)" class="d-flex he-100 wi-100px">
+    <div [ngClass]="getCSSClass(kyu)" class="stripe" *ngIf="kyu % 2 !== 0"></div>
+  </div>
+</div>
